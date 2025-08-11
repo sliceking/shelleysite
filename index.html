@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelley Gautam - Digital Health Career Coach</title>
+    <meta name="description" content="I help clinicians reclaim their lives and pivot into digital health. Career coaching, resume building, and life coaching for healthcare professionals.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        'marquee': {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .marquee-container {
+            animation-play-state: running;
+        }
+        .marquee-container:hover {
+            animation-play-state: paused;
+        }
+        .marquee-container:hover .animate-marquee {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="font-lato">
+    <header class="fixed w-full top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-xl font-semibold text-gray-900 tracking-tight">Shelley Gautam</h1>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#home" class="text-gray-600 hover:text-gray-900 text-sm font-normal transition-colors">Home</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-gray-900 text-sm font-normal transition-colors">About</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-gray-900 text-sm font-normal transition-colors">Services</a></li>
+                    <li><a href="#expertise" class="text-gray-600 hover:text-gray-900 text-sm font-normal transition-colors">Expertise</a></li>
+                    <li><a href="#faq" class="text-gray-600 hover:text-gray-900 text-sm font-normal transition-colors">FAQ</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-gray-900 text-sm font-normal transition-colors">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="space-y-1">
+                    <a href="#home" class="block px-3 py-2 text-gray-600 hover:text-gray-900 text-sm font-normal">Home</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-gray-900 text-sm font-normal">About</a>
+                    <a href="#services" class="block px-3 py-2 text-gray-600 hover:text-gray-900 text-sm font-normal">Services</a>
+                    <a href="#expertise" class="block px-3 py-2 text-gray-600 hover:text-gray-900 text-sm font-normal">Expertise</a>
+                    <a href="#faq" class="block px-3 py-2 text-gray-600 hover:text-gray-900 text-sm font-normal">FAQ</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-gray-900 text-sm font-normal">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="pt-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight tracking-tight">I help clinicians reclaim their lives and pivot into digital health</h2>
+                        <p class="text-lg font-bold text-gray-600 mb-5 tracking-tight">Women's Health SME & Career Consultant</p>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">15 years of experience in clinical and high-growth startup environments. Successfully transition from burnout to fulfillment with personalized coaching and proven strategies for breaking into femtech and digital health.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-700 transition-colors">Book a Consultation</a>
+                            <a href="#services" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 text-sm font-medium rounded-md hover:bg-gray-50 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                        <img src="https://media.intro.co/avatars/1076932noQvJ1Wx.jpg" alt="Shelley Gautam - Digital Health Career Coach" class="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl shadow-2xl object-cover" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white py-20 lg:py-28">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">My Story</h2>
+                <div class="prose prose-lg prose-gray mx-auto text-center space-y-6">
+                    <p class="text-lg font-medium text-gray-900">I'm on a mission to advance women's healthcare initiatives globally by contributing to early stage femtech start-ups.</p>
+                    <p class="text-lg text-gray-600 leading-relaxed">I've been where you are—overworked, burned out, and searching for more. With 15 years of experience in both traditional clinical and high-growth startup environments, I've successfully transitioned from bedside nursing to becoming a women's health SME and career consultant.</p>
+                    <p class="text-lg text-gray-600 leading-relaxed">I'm a registered nurse, certified yoga instructor, and world traveler who speaks four languages: English, Spanish, Hindi, and Punjabi. My Peace Corps experience and work across international teams has given me a global, holistic lens on healthcare.</p>
+                    <p class="text-lg text-gray-600 leading-relaxed">Having worked at companies like Carrot Fertility, Everly Health, and UnitedHealth Group, I understand how to navigate the femtech and digital health landscape. I know how to take care of people and make things better, which enables a deep understanding of patient and user experience.</p>
+                    <p class="text-lg text-gray-600 leading-relaxed">Now I help other nurses and clinicians achieve similar transitions into meaningful, well-compensated roles in women's health and digital health companies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="bg-white py-20 lg:py-28">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">How I Can Help You</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all duration-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Femtech & Women's Health Career Coaching</h3>
+                        <p class="text-gray-600 leading-relaxed">Navigate your transition into women's health startups and femtech companies with insider knowledge from 15+ years of experience.</p>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all duration-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Resume & LinkedIn Optimization</h3>
+                        <p class="text-gray-600 leading-relaxed">Showcase your clinical expertise and transferable skills for roles in digital health, fertility care, and women's health companies.</p>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all duration-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Industry Networking & Job Search</h3>
+                        <p class="text-gray-600 leading-relaxed">Connect with high-growth startups, femtech companies, and digital health organizations seeking clinical experts.</p>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all duration-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Interview Prep & Salary Negotiation</h3>
+                        <p class="text-gray-600 leading-relaxed">Prepare for roles at companies like Carrot Fertility, Modern Fertility, and other leading health tech companies.</p>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all duration-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Leadership & Product Strategy Mentoring</h3>
+                        <p class="text-gray-600 leading-relaxed">Develop skills in product leadership, cross-functional collaboration, and patient experience design.</p>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all duration-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Burnout Recovery & Career Fulfillment</h3>
+                        <p class="text-gray-600 leading-relaxed">Transform your relationship with work while building a meaningful career in healthcare innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="why-me" class="bg-gray-50 py-20 lg:py-28">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">Why Work With Me</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Industry Insider Knowledge</h3>
+                        <p class="text-gray-600 leading-relaxed">15+ years in clinical and startup environments at Carrot Fertility, Everly Health, and UnitedHealth Group.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Women's Health Expertise</h3>
+                        <p class="text-gray-600 leading-relaxed">Subject matter expert in fertility, women's health, and femtech with proven track record in the industry.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Global Perspective</h3>
+                        <p class="text-gray-600 leading-relaxed">Multilingual (English, Spanish, Hindi, Punjabi) with Peace Corps experience and cultural competency.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 tracking-tight">Proven Leadership Skills</h3>
+                        <p class="text-gray-600 leading-relaxed">Experience in relationship building, training, mentorship, product strategy, and cross-functional collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="bg-white py-20 lg:py-28">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">Core Expertise & Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-5 tracking-tight">Women's Health & Fertility SME</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Patient & user experience design
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Consumer education & training
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Clinical protocol development
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Fertility care coordination
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-5 tracking-tight">Leadership & Strategy</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Product leadership & strategy
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Cross-functional collaboration
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Process improvement
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Contract negotiation
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 border border-gray-200 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-5 tracking-tight">Technical Proficiencies</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Salesforce, HubSpot, JIRA
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Asana, Trello, Notion
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                EMR Systems, Airtable
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <span class="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                                Google/Microsoft Office Suite
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands-showcase" class="bg-gray-50 py-20 lg:py-28 overflow-hidden">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">Brands I've Worked With</h2>
+                <div class="relative">
+                    <div class="marquee-container flex">
+                        <div class="marquee-content flex items-center space-x-12 animate-marquee">
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld" alt="Carrot Fertility" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/everlyhealth.com" alt="Everly Health" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/unitedhealthgroup.com" alt="UnitedHealth Group" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/futurefamily.com" alt="Future Family" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/hrcfertility.com" alt="HRC Fertility" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/peacecorps.gov" alt="Peace Corps" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="marquee-content flex items-center space-x-12 animate-marquee" aria-hidden="true">
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld" alt="Carrot Fertility" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/everlyhealth.com" alt="Everly Health" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/unitedhealthgroup.com" alt="UnitedHealth Group" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/futurefamily.com" alt="Future Family" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/hrcfertility.com" alt="HRC Fertility" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                            <div class="flex items-center justify-center h-16 w-40 flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                <img src="https://logo.clearbit.com/peacecorps.gov" alt="Peace Corps" class="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="bg-gray-50 py-20 lg:py-28">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2" onclick="toggleFAQ(this)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-bold text-gray-900">What makes you different from other career coaches?</h3>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">I'm not just a career coach—I'm a women's health SME with 15+ years of hands-on experience in both clinical settings and high-growth startups like Carrot Fertility and Everly Health. I've made the exact transition you're considering and understand the unique challenges of moving from bedside care to digital health roles.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2" onclick="toggleFAQ(this)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-bold text-gray-900">Do I need a specific background to work with you?</h3>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">I primarily work with nurses and clinicians looking to transition into digital health, femtech, and women's health companies. However, any healthcare professional experiencing burnout and seeking meaningful change in their career can benefit from my guidance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2" onclick="toggleFAQ(this)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-bold text-gray-900">How long does the career transition process typically take?</h3>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">The timeline varies depending on your background, goals, and market conditions. Some clients secure positions within 3-6 months, while others may take 6-12 months to find the right fit. I focus on sustainable, strategic transitions rather than quick fixes that don't lead to long-term satisfaction.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2" onclick="toggleFAQ(this)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-bold text-gray-900">What can I expect in terms of salary in digital health roles?</h3>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">Digital health and femtech companies often offer competitive salaries, especially for roles that require clinical expertise. Depending on your experience and the role, you can expect salaries ranging from $80k-$200k+, plus equity, comprehensive benefits, and better work-life balance than traditional clinical settings.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-question w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2" onclick="toggleFAQ(this)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-bold text-gray-900">Do you offer ongoing support after I land a new role?</h3>
+                                <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600 leading-relaxed">Yes! I believe in long-term relationships with my clients. I offer ongoing mentorship and support as you navigate your new role, develop leadership skills, and advance in your digital health career. Many clients continue working with me for professional development and strategic career planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white py-20 lg:py-28">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16 tracking-tight">Ready to Transform Your Career?</h2>
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4 tracking-tight">Book Your Consultation</h3>
+                    <p class="text-lg text-gray-600 mb-3 leading-relaxed">Get personalized advice through a 1:1 video consultation.</p>
+                    <p class="text-xl font-semibold text-gray-900 mb-8">Starting at $35</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://intro.co/shelleygautam" class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-700 transition-colors" target="_blank">Book on Intro.co</a>
+                        <a href="https://linkedin.com/in/shelleygautam/" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 text-sm font-medium rounded-md hover:bg-gray-50 transition-colors" target="_blank">Connect on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-600">&copy; 2025 Shelley Gautam. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="https://linkedin.com/in/shelleygautam/" target="_blank" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">LinkedIn</a>
+                    <a href="https://intro.co/shelleygautam" target="_blank" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Intro.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        function toggleFAQ(button) {
+            const faqItem = button.closest('.faq-item');
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = button.querySelector('.faq-icon');
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 64; // Account for fixed header
+                    const elementPosition = target.offsetTop;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if it's open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+
+        function highlightNavigation() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-gray-900', 'font-bold');
+                link.classList.add('text-gray-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-gray-900', 'font-bold');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavigation);
+    </script>
+</body>
+</html>
